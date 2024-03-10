@@ -1,0 +1,29 @@
+# security
+spring.security.oauth2.authorization-server.issuer-uri=http://localhost:8080
+spring.session.store-type=jdbc
+
+# Expiration time in seconds (e.g., 3600 seconds = 1 hour)
+app.session.jwt.expiration=1800
+spring.session.timeout=1800
+
+# DB
+spring.datasource.url=***
+spring.datasource.username=***
+spring.datasource.password=***
+spring.datasource.driver-class-name=***
+spring.datasource.initialization-mode=***
+
+# JPA/Hibernate properties
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# Logging
+#logging.level.org.springframework=DEBUG
+#logging.level.org.springframework.boot.autoconfigure=DEBUG
+logging.level.org.springframework.security=DEBUG
+#logging.level.org.springframework.web=DEBUG
+logging.level.org.springframework.oauth2=DEBUG
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
